@@ -37,12 +37,24 @@
         <button class="choice" onclick="selectTime('7:00', this)">7:00</button>
         <button class="choice" onclick="selectTime('7:30', this)">7:30</button>
         <button class="choice" onclick="selectTime('8:00', this)">8:00</button>
-        <button class="choice next-week" onclick="selectTime('next week', this)">do it next week? 🎃</button>
+        <button class="choice next-week" onclick="showPage(3)">do it next week? 🎃</button>
       </div>
 
       <p id="response" class="response"></p>
       <a id="textButton" class="text-button" href="#">💌 Text the date details</a>
       <button class="back" onclick="showPage(1)">← go back</button>
+    </section>
+    <section id="page3" class="page">
+      <p class="tiny">oh... interesting choice... 👁️</p>
+      <h2>AH SO YOU HATE ME 😭💔</h2>
+
+      <div class="angry-frame">
+        <img src="angry_cat.png" alt="Angry cat">
+      </div>
+
+      <p class="message">okay fine... pick a time then 😤🎃</p>
+
+      <button onclick="showPage(2)">← okay okay, take me back</button>
     </section>
   </main>
 
