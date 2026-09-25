@@ -237,3 +237,56 @@ button:active {
   height: auto;
   border-radius: 17px;
 }
+
+/* ---- ANGRY MODE: page 3 ---- */
+
+#page3.active {
+  animation: angryShake .5s ease;
+}
+
+@keyframes angryShake {
+  0%, 100% { transform: translateX(0); }
+  15%, 45%, 75% { transform: translateX(-8px) rotate(-1deg); }
+  30%, 60%, 90% { transform: translateX(8px) rotate(1deg); }
+}
+
+#page3 .tiny {
+  color: #c0392b;
+  font-weight: 700;
+}
+
+#page3 h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  color: #e63946;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 rgba(230, 57, 70, .15);
+}
+
+#page3 .message {
+  color: #8b3a3a;
+  font-weight: 700;
+}
+
+#page3 .angry-frame {
+  border: 3px solid #e63946;
+  box-shadow: 0 10px 28px rgba(230, 57, 70, .35);
+  transform: rotate(-2deg);
+  animation: angryWiggle 2.5s ease-in-out infinite;
+}
+
+@keyframes angryWiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+#page3 button {
+  background: linear-gradient(135deg, #e63946, #ff6b6b);
+  box-shadow: 0 7px 18px rgba(230, 57, 70, .35);
+}
+
+#page3 button:hover {
+  box-shadow: 0 10px 22px rgba(230, 57, 70, .45);
+}
