@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Message For You 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <div class="hearts" aria-hidden="true">♡ ♥ ♡ ♥ ♡</div>
+
+    <section id="page1" class="page active">
+      <p class="tiny">a little message for my favorite person ♡</p>
+      <h1>I love you! 💗</h1>
+
+      <div class="picture-frame">
+        <img src="bunny.png" alt="Cute bunny">
+      </div>
+
+      <p class="message">
+        Have a great day at work today SAMMYYYYYY!<br>
+        I can't wait to see you later today! 🥰
+      </p>
+
+      <button onclick="showPage(2)">next page →</button>
+    </section>
+
+    <section id="page2" class="page">
+      <p class="tiny">okay, important question... 🎃</p>
+      <h2>What time do you want to go to the pumpkin patch today?</h2>
+      <p class="subtitle">Pick a time, cutie ♡</p>
+
+      <div class="choices">
+        <button class="choice" onclick="selectTime('6:00', this)">6:00</button>
+        <button class="choice" onclick="selectTime('6:30', this)">6:30</button>
+        <button class="choice" onclick="selectTime('7:00', this)">7:00</button>
+        <button class="choice" onclick="selectTime('7:30', this)">7:30</button>
+        <button class="choice" onclick="selectTime('8:00', this)">8:00</button>
+        <button class="choice next-week" onclick="selectTime('next week', this)">do it next week? 🎃</button>
+      </div>
+
+      <p id="response" class="response"></p>
+      <a id="textButton" class="text-button" href="#">💌 Text the date details</a>
+      <button class="back" onclick="showPage(1)">← go back</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
